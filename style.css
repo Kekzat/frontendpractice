@@ -386,7 +386,7 @@ textarea {
   cursor: pointer;
 }
 
-/*=============== MEDIA QUERY ===============*/
+/*=============== MEDIA QUERY. Prikol dlya smeni' resolution'a dlya raznix mobil i td i td ===============*/
 
 @media screen and (max-width: 1200px) {
   html {
@@ -464,4 +464,5 @@ textarea {
     font-size: 2rem;
     line-height: 2.5rem;
   }
+}
 }
