@@ -1,42 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <title>test</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!--navigation bar-->
-        <nav class="navbar">
-            <div class="navdiv">
-                <!--navigation bar-->
-                <ul>
-                    <li class="work"><a href="#">Works</a></li>
-                    <li class="contact"><a href="#">Contact</a></li>
-                </ul>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- logotipi vrode  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />  
+    <!-- css'ka -->
+    <link rel="stylesheet" href="style.css">
+    <title>Test Portfolio </title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!--=============== navbar ===============-->
+        <div class="menu">
+            <a href="#welcome-section" class="menu-icon fas fa-home"></a>
+            <a href="#about" class="menu-icon fas fa-user"></a>
+            <a href="#experience" class="menu-icon fas fa-briefcase"></a>
+            <a href="#contact" class="menu-icon fas fa-envelope"></a>
+        </div>
+        <!--=============== main window ===============-->
+    
+        <div class="portfolio">
+            <!--=============== header===============-->
+    
+            <section class="header">
+                <img class="header-img"
+                    src="https://images.pexels.com/photos/2389349/pexels-photo-2389349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="" />
+                <h1>Yesbergen Bekzat</h1>
+                <h2>Data Analytic</h2>
+                <div class="socials">
+                    <a href="@github.com/Kekzat" target="_blank" class="fab fa-github"></a>
+                </div>
+            </section>
+    
+            <!--=============== content ===============-->
+    
+            <div class="content">
+                <!--=============== start ===============-->
+    
+                <section class="content-card home" id="welcome-section">
+                    <h1>Hi, I am Bekzat</h1>
+                </section>
+    
+                <!--=============== aboutme ===============-->
+    
+                <section class="content-card about" id="about">
+                    <h1>About me</h1>
+                    <div class="about-item about-me">
+                        <p>
+                            I've been developing since high school. In recent years, I was interested in Data Science, reoriented to Data Analytics rather than development. Self-taught student with great potential and experience, nothing to say
+                        </p>
+                        <p>
+                            btw im worst designer u ever seen
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <div class="about-item skills">
+                            <h1>Skills</h1>
+                            <span class="skill">POWERBI</span>
+                            <span class="skill">R</span>
+                            <span class="skill">Python</span>
+                            <span class="skill">JS</span>
+                            <span class="skill">C++</span>
+                            <span class="skill">JAVA</span>
+                            <span class="skill">GOLANG</span>
+                            <span class="skill">C#</span>
+                            <span class="skill">Unix/Linux</span>
+                            <span class="skill">Spring</span>
+                        </div>
+    
+                        <div class="about-item languages">
+                            <h1>Languages</h1>
+                            <div class="language">
+                                <p>kazakh</p>
+                                <span class="bar"><span class="kazakh"></span></span>
+                            </div>
+                            <div class="language">
+                                <p>english</p>
+                                <span class="bar"><span class="english"></span></span>
+                            </div>
+                            <div class="language">
+                                <p>russian</p>
+                                <span class="bar"><span class="russian"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--=============== experience ===============-->
+    
+                <section class="content-card experience" id="experience">
+                    <h1>Experience</h1>
+                    <div class="timeline">
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2018-2019</div>
+                                <div class="timeline-content">
+                                    <h3>Python Freelance Dev</h3>
+                                    <p>
+                                        First experience in DEV, it was painful but necessary.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2019 - 2021</div>
+                                <div class="timeline-content">
+                                    <h3>Love with C++</h3>
+                                    <p>
+                                        I discovered C++ and back-end development and felt a breath of fresh air.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2022 - 2023</div>
+                                <div class="timeline-content">
+                                    <h3>Data Analytic</h3>
+                                    <p>
+                                        Fell in love with analytics, it was what required all my knowledge of analysis and programming.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <!--=============== contact, ukradeno lol ===============-->
+                    <section class="content-card contact" id="contact">
+                    <h1>Contact</h1>
+                    <form class="form" id="form" action="https://www.freecodecamp.com/email-submit">
+                        <div class="input-box">
+                            <input type="text" class="text-input" name="name" placeholder="Name" />
+                        </div>
+                        <div class="input-box">
+                            <input type="email" class="text-input" name="email" id="email" placeholder="Email" />
+                        </div>
+                        <div class="input-box">
+                            <input type="subject" class="text-input" name="subject" id="subject"
+                                placeholder="Subject" />
+                        </div>
+                        <div class="input-box">
+                            <textarea name="text" class="message" placeholder="Message..."></textarea>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" class="submit-btn" id="submit" value="submit" />
+                        </div>
+                    </form>
+                </section>
             </div>
-        </nav>
-        <!--logo shit-->
-        <div class = "logo">Hi, I am Bekzat, Data Engineer at Google</div>
-        <div class = "underlogo">He graduated from Oxford as a child, then quickly graduated from Moscow State University. Personally developed YouTube and many other Google services</div>
-        <!--contact section-->
-        <div class = "contactme">@Looking for ML team btw. Contact me: @kes</div>  
-    </body>
-    <!--logo shit-->
-    <!--blocks-->
-    <div class="mainblock">
-        <div class="block1">
-            <p1>Hard skills</p1>
-            <p2>Data Structures, Database and SQL, cloud computing, GIT, Java SDK 8+, Spring+</p2>
-            <div class="icon1"><img src="images/java.png"></div>
-            <div class="icon2"><img src="images/cpp.png"></div>
-            <div class="icon3"><img src="images/python.png"></div>
-            <div class="icon4"><img src="images/go.png"></div>
         </div>
-        <div class="block2">
-            <p1>Soft Skills</p1>
-            <p2>Self-Learning, Open-mindness, kind personality xD</p2>
-        </div>
-    </div>
-    <!--blocks-->
+    </div>k
+
+    <script src="script.js"></script>
+</body>
+
 </html>
